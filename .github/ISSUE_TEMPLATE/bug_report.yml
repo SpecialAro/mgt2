@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a bug
+labels: ["bug :beetle:"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        1. Please fill the form below, this way we can analyse and fix the problem as fast as possible.
+        2. If you are adding screenshots and/or videos, please do add it in English.
+  - type: checkboxes
+    attributes:
+      label: Avoid duplicates
+      description: Please ensure you've completed the following
+      options:
+        - label: I agree to follow the [Code of Conduct](https://github.com/specialaro/mgt2/blob/master/CODE_OF_CONDUCT.md) that this project adheres to.
+          required: true
+        - label: I have searched the [issues tracker](https://github.com/specialaro/mgt2/issues?q=is%3Aopen+is%3Aissue) for a bug report similar to mine, in vain
+          required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: A clear description of what actually happens.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Explain to us how we can reproduce your bug on our computer
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help visualize your problem
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: If your problem needs further explanation, please add more information here
